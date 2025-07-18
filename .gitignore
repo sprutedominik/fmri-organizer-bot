@@ -1,0 +1,20 @@
+echo "data/" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+# Lokale Daten nicht tracken
+data/
+results/
+
+# Sonstige typische Ausschlüsse
+__pycache__/
+*.pyc
+*.nii
+*.nii.gz
+*.csv
+*.tsv
+*.json
+*.log
+.DS_Store
+data/
+results/
+__pycache__/

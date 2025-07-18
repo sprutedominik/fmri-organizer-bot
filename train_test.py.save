@@ -1,0 +1,31 @@
+from bot.ml_classifier import FileClassifier
+
+filenames = [
+    "functional_fmri_localizer_sms4_g2.nii.gz",
+    "anatomic_anat_MPRAGE_T1w.nii",
+    "scaninfo.txt",
+    "study_form_questionnaire.json",
+    "notes_subject02.csv",
+    "MR000243.dcm",
+    "protocol_A_final_form.json",
+    "T1w_brain_image.nii",
+    "bold_run1_func.nii.gz"
+]
+
+labels = [
+    "raw/func",
+    "raw/anat",
+    "logs",
+    "protocols",
+    "meta",
+    "raw/dicom",
+    "protocols",
+    "raw/anat",
+    "raw/func"
+]
+
+clf = FileClassifier()
+clf.train(filenames, labels)
+clf.save()
+
+X^x^x
