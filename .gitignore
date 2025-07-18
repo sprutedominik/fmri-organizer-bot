@@ -18,3 +18,9 @@ __pycache__/
 data/
 results/
 __pycache__/
+data/
+results/
+*.nii*
+*.dcm
+__pycache__/
+.env
